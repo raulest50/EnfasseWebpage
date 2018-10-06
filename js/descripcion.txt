@@ -1,0 +1,8 @@
+instafeed.js -> permite mostrar de manera configurable
+imagenes de tu cuenta de instagram en una pagina web.
+
+aos.js -> permite hacer animaciones de elementos html 
+mientras  se hace scroll. un ejemplo de su uso se puede
+ver en algunos  divs y h tags donde se coloca por ejemplo: 
+data-aos="flip-right".
+

@@ -1,0 +1,121 @@
+<div  class="container">
+
+                <h2 class="text-center julius_bl" data-aos="zoom-in" style="margin-bottom: 1em; margin-top: 2em">
+                    Nuestras Marcas
+                </h2>
+
+                <div class="wrapper" data-aos="zoom-in">
+
+                    <ul id="sb-slider" class="sb-slider">
+                        <li>
+                            <a href="" target="_blank"><img src="images/images/proel.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Proel</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><img src="images/images/chauvet.jpg" alt="image2"/></a>
+                            <div class="sb-description">
+                                <h3>Honest Entertainer</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><img src="images/images/yamaha.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Brave Astronaut</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank"><img src="images/images/4.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Affectionate Decision Maker</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank"><img src="images/images/5.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Faithful Investor</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank"><img src="images/images/6.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Groundbreaking Artist</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank"><img src="images/images/7.jpg" alt="image1"/></a>
+                            <div class="sb-description">
+                                <h3>Selfless Philantropist</h3>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div id="shadow" class="shadow"></div>
+
+                    <div id="nav-arrows" class="nav-arrows">
+                        <a href="#">Next</a>
+                        <a href="#">Previous</a>
+                    </div>
+
+                </div><!-- /wrapper -->
+
+
+
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+                <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+
+
+
+                <script type="text/javascript">
+                    $(function() {
+
+                        var Page = (function() {
+
+                            var $navArrows = $( '#nav-arrows' ).hide(),
+                                $shadow = $( '#shadow' ).hide(),
+                                slicebox = $( '#sb-slider' ).slicebox( {
+                                    onReady : function() {
+
+                                        $navArrows.show();
+                                        $shadow.show();
+
+                                    },
+                                    orientation : 'r',
+                                    cuboidsRandom : true,
+                                    disperseFactor : 30
+                                } ),
+
+                                init = function() {
+
+                                    initEvents();
+
+                                },
+                                initEvents = function() {
+
+                                    // add navigation events
+                                    $navArrows.children( ':first' ).on( 'click', function() {
+
+                                        slicebox.next();
+                                        return false;
+
+                                    } );
+
+                                    $navArrows.children( ':last' ).on( 'click', function() {
+
+                                        slicebox.previous();
+                                        return false;
+
+                                    } );
+
+                                };
+
+                            return { init : init };
+
+                        })();
+
+                        Page.init();
+
+                    });
+                </script>
+            </div>
