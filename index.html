@@ -164,6 +164,13 @@
 
         </section>
 
+        <div id="particulas" data-aos="zoom-in" style="position: absolute; background-color: transparent; height: 100%; width: 100%; z-index=-1"></div>
+        <script>
+            particlesJS.load('particulas', 'assets/particles.json', function() {
+                console.log('callback - particles.js config loaded');
+            });
+        </script>
+
 
         <!--acerca de nosotros-->
         <section class="about-wthree" id="about">
@@ -209,57 +216,6 @@
             </h1>
 
 
-            <!--
-<div id="particulas" data-aos="zoom-in" style="position: absolute; background-color: transparent; height: 100%; width: 100%; z-index=-1"></div>
-<script>
-particlesJS.load('particulas', 'assets/particles.json', function() {
-console.log('callback - particles.js config loaded');
-});
-</script>
--->
-
-            <link rel="stylesheet" href="css/style.boishak.css">
-
-            <div class="boishakh-carousel">
-                <div class="bc-content">
-                    <div class="bc-item">
-                        <img src="images/images/chauvet.jpg" alt="">
-                    </div>
-                    <div class="bc-item">
-                        <img src="images/images/proel.jpg" alt="">
-                    </div>
-                    <div class="bc-item">
-                        <img src="images/images/yamaha.jpg" alt="">
-                    </div>
-                    <div class="bc-item">
-                        <img src="https://picsum.photos/600/450?image=823" alt="">
-                    </div>
-                    <div class="bc-item">
-                        <img src="https://picsum.photos/600/450?image=826" alt="">
-                    </div>
-                    <div class="bc-item">
-                        <img src="https://picsum.photos/600/450?image=821" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-                    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
-                    crossorigin="anonymous">
-            </script>
-            <script src="js/boishakh-carousel.js"></script>
-
-            <script>
-                $('.boishakh-carousel').boishakhCarousel({
-                    pauseOnHover: true, // pause on hover                    
-                    autoPlay: true,// enable autoplay. default: false
-                });
-            </script>
-
-
-
-
-
 
             <script src="js/jquery.liquidCarousel.js"></script>
             <link href="css/liquidCa.css" rel="stylesheet" type="text/css" media="all" />
@@ -275,11 +231,18 @@ console.log('callback - particles.js config loaded');
                     <li class="ui-carousel-item"><img src="images/logos/martin.png"></li>
                     <li class="ui-carousel-item"><img src="images/logos/midas.png"></li>
                     <li class="ui-carousel-item"><img src="images/logos/neutrik.jpg"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/proel.jpg"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/SENNHEISER.jpg"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/shure.png"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/soundcraft.png"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/switchcraft.jpg"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/tascam.png"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/toa.jpg"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/Vutec-logo.jpg"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/yamaha.jpg"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/amateaudio.png"></li>
                 </ul>
-
-
             </div>
-
             <script>
                 $('#sample').liquidCarousel({
                     pos_x: 'right'
@@ -295,6 +258,71 @@ console.log('callback - particles.js config loaded');
 
 
 
+
+
+            <link rel="stylesheet" href="css/style.boishak.css">
+
+            <div class="boishakh-carousel">
+                <div class="bc-content">
+                    <div class="bc-item">
+                        <img src="images/images/chauvet.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/chauvet2.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/proel.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/proel2.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/mackie.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/sehnnheiser.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/mix_01.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/mix_02.gif" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/shure.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/yamaha.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/shure2.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/amateaudio.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+                    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+                    crossorigin="anonymous">
+            </script>
+            <script src="js/boishakh-carousel.js"></script>
+
+            <script>
+                (function($){
+                    $(document).ready(function(){
+                        $('.boishakh-carousel').boishakhCarousel({                   
+                            autoPlay: true,// enable autoplay. default: false
+                            itemsOnMobile: 1,
+                            itemsOnTablet: 1,
+                            itemsBigTablet: 3,
+                            background: '#ffffff'
+                        });
+                    });
+                }(jQuery));
+
+            </script>
 
 
         </section>

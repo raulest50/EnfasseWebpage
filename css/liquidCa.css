@@ -47,8 +47,8 @@
 		.ui-carousel-item {
 			float: left;
 			display: inline;
-			margin: 0px;
-			padding: 40px 0px 0px 0px;
+			margin: 5px;
+			padding: 10px 0px 0px 0px;
 			width: 250px;
 			height: 250px;
 			background-color: transparent;
