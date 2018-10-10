@@ -164,13 +164,6 @@
 
         </section>
 
-        <div id="particulas" data-aos="zoom-in" style="position: absolute; background-color: transparent; height: 100%; width: 100%; z-index=-1"></div>
-        <script>
-            particlesJS.load('particulas', 'assets/particles.json', function() {
-                console.log('callback - particles.js config loaded');
-            });
-        </script>
-
 
         <!--acerca de nosotros-->
         <section class="about-wthree" id="about">
@@ -203,8 +196,17 @@
             </div>
         </section>
 
+        
+        <section>
+            <div id="particulas" data-aos="zoom-in" style="position: absolute; background-color: transparent; height: 10em; width: 100%;"></div>
+            <script>
+                particlesJS.load('particulas', 'assets/particles.json', function() {
+                    console.log('callback - particles.js config loaded');
+                });
+            </script>
 
-
+            <div style="height: 10em; width: 100%"></div>
+        </section>
 
 
 
@@ -220,31 +222,34 @@
             <script src="js/jquery.liquidCarousel.js"></script>
             <link href="css/liquidCa.css" rel="stylesheet" type="text/css" media="all" />
 
-            <div id="sample" class="carousel">
+            <div id="sample_li" class="carousel">
 
                 <ul class="ui-carousel-list">
-                    <li class="ui-carousel-item"><img src="images/logos/DBX.png"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/denon.gif"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/chauvet_.png"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/harman.png"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/mackie.png"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/martin.png"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/midas.png"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/neutrik.jpg"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/proel.jpg"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/SENNHEISER.jpg"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/shure.png"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/soundcraft.png"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/switchcraft.jpg"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/tascam.png"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/toa.jpg"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/Vutec-logo.jpg"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/yamaha.jpg"></li>
-                    <li class="ui-carousel-item"><img src="images/logos/amateaudio.png"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/DBX.png" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/denon.gif" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/chauvet_.png" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/harman.png" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/mackie.png" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/adamsonsystems.jpg" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/aimlineaudio.jpg" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/neutrik.jpg" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/proel.jpg" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/SENNHEISER.jpg" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/shure.png" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/soundcraft.png" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/switchcraft.jpg" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/tascam.png" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/toa.jpg" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/Vutec-logo.jpg"class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/akiyamadj.png" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/alcons_audio.jpg" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/amina_1.png" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/yamaha.jpg" class="marklogo"></li>
+                    <li class="ui-carousel-item"><img src="images/logos/amateaudio.png" class="marklogo"></li>
                 </ul>
             </div>
             <script>
-                $('#sample').liquidCarousel({
+                $('#sample_li').liquidCarousel({
                     pos_x: 'right'
                     ,   easing: 'linear'
                     ,   speed: 4000
@@ -268,10 +273,13 @@
                         <img src="images/images/chauvet.jpg" alt="">
                     </div>
                     <div class="bc-item">
-                        <img src="images/images/chauvet2.jpg" alt="">
+                        <img src="images/images/proel.jpg" alt="">
                     </div>
                     <div class="bc-item">
-                        <img src="images/images/proel.jpg" alt="">
+                        <img src="images/images/akiyamaacura.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/aimline.jpg" alt="">
                     </div>
                     <div class="bc-item">
                         <img src="images/images/proel2.jpg" alt="">
@@ -280,13 +288,13 @@
                         <img src="images/images/mackie.jpg" alt="">
                     </div>
                     <div class="bc-item">
+                        <img src="images/images/alcons2.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
                         <img src="images/images/sehnnheiser.jpg" alt="">
                     </div>
                     <div class="bc-item">
-                        <img src="images/images/mix_01.jpg" alt="">
-                    </div>
-                    <div class="bc-item">
-                        <img src="images/images/mix_02.gif" alt="">
+                        <img src="images/images/aminaspeaker.jpg" alt="">
                     </div>
                     <div class="bc-item">
                         <img src="images/images/shure.jpg" alt="">
@@ -299,6 +307,18 @@
                     </div>
                     <div class="bc-item">
                         <img src="images/images/amateaudio.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/chauvet2.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/red.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/alcons_audio.jpg" alt="">
+                    </div>
+                    <div class="bc-item">
+                        <img src="images/images/wilss.jpg" alt="">
                     </div>
                 </div>
             </div>

@@ -162,3 +162,11 @@
 			background-color: #B7D264;
 			text-align: center;
 		}
+
+
+
+img .marklogo{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
