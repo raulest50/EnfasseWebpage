@@ -1552,25 +1552,28 @@ p.contacto{
   }
 
 .insta-img{
-    
+    height: 280px;
 }
 
 
 div.insta-div{
     margin: 0;
     padding: 2px;
+    height: 285px;
 }
 
 div.insta-div:hover{
     margin: 0;
     padding: 2px;
     opacity: 0.7;
+    height: 285px;
 }
 
 div.insta-div:active{
     margin: 0;
     padding: 2px;
     opacity: 0.5;
+    height: 285px;
 }
 
 /*-- /responsive design --*/
